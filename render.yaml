@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: slack-groq-bot
+    name: slack-groq-bot-v2
     env: node
     buildCommand: npm install
     startCommand: npm start

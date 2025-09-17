@@ -1,6 +1,6 @@
 {
-  "name": "slack-groq-bot",
-  "version": "1.0.0",
+  "name": "slack-groq-bot-v2",
+  "version": "2.0.0",
   "type": "module",
   "private": true,
   "engines": {
