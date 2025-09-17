@@ -1,0 +1,31 @@
+{
+  "name": "slack-groq-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test-server": "node test-server.js",
+    "rag:db": "psql \"$PG_CONN\" -f rag/schema.sql",
+    "rag:ingest": "node rag/ingest.js docs"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@slack/bolt": "^4.4.0",
+    "@slack/socket-mode": "^2.0.4",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "ioredis": "^5.4.1",
+    "node-jira-client": "^1.0.6",
+    "openai": "^4.53.0",
+    "pg": "^8.11.5",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
